@@ -1,0 +1,93 @@
+Sample Code:
+Here's a basic HTML and CSS template for the user interface:
+HTML (index.html):
+<!DOCTYPE html>
+<html>
+<head>
+<title>UrbanTraffic - Real-time Traffic App</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<header>
+<h1>UrbanTraffic</h1>
+</header>
+<div class="map-container">
+<!-- Map display goes here -->
+</div>
+<div class="traffic-info">
+<div class="traffic-overlay">
+<div class="green-overlay"></div>
+<div class="yellow-overlay"></div>
+<div class="red-overlay"></div>
+</div>
+<div class="traffic-incidents">
+<!-- Real-time traffic incident details go here -->
+</div>
+</div>
+<footer>
+<button id="navigate-button">Navigate</button>
+</footer>
+</body>
+</html>
+
+
+
+
+CSS (styles.css):
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+header {
+background-color: #4285f4;
+color: #fff;
+text-align: center;
+padding: 10px;
+}
+.map-container {
+height: 60vh;
+}
+.traffic-info {
+background-color: #fff;
+padding: 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 40vh;
+}
+.traffic-overlay {
+display: flex;
+justify-content: space-around;
+}
+.green-overlay, .yellow-overlay, .red-overlay {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+}
+.green-overlay {
+background-color: #00c853;
+}
+.yellow-overlay {
+background-color: #ffea00;
+}
+.red-overlay {
+background-color: #ff3d00;
+}
+.traffic-incidents {
+margin-top: 10px;
+}
+footer {
+background-color: #4285f4;
+color: #fff;
+text-align: center;
+padding: 10px;
+}
+#navigate-button {
+background-color: #0f9d58;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
